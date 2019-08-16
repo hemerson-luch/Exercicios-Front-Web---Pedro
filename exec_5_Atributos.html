@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+	background: yellow;
+	border: 1px solid black;
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<div contextmenu="mymenu">
+<p>Right-click inside this box to see the context menu!
+
+<menu type="context" id="mymenu">
+	<menuitem label="Refresh" onclick="window.location.reload();"
+icon="ico_reload.png"></menuitem>
+	<menu label="Share on...">
+	<menuitem label="Twitter" icon="ico_twitter.png"
+onclick="window.opn('//twitter.com/internet/tweet?text=' +
+window.location.href);"></menuitem>
+</menu>
+	
+</div>
+
+<p>This example currently only works in Firefox!</p>
+
+</body>
+</html>
+	
+	
